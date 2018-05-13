@@ -4,106 +4,71 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Duy Tong</title>
-	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 	<div id="app">
-		<aside>
+		<div class="container">
 			<nav class="navbar">
-				<ul class="navbar__menu">
+				<a href="" class="navbar__brand">
+					<img src="images/logo.png" alt="">
+				</a>
+				<button class="navbar__mobile">
+					<i class="fal fa-bars"></i>
+				</button>
+				<ul class="navbar__list">
 					<li class="navbar__item">
-						<a href="" class="navbar__link active">
-							<i class="fal fa-home navbar__icon"></i>
-							<span class="navbar__text">Home</span>
-						</a>
+						<a href="" class="navbar__link active">Home</a>
 					</li>
 					<li class="navbar__item">
-						<a href="" class="navbar__link">
-							<i class="fal fa-user navbar__icon"></i>
-							<span class="navbar__text">About</span>
-						</a>
+						<a href="" class="navbar__link">About</a>
 					</li>
 					<li class="navbar__item">
-						<a href="" class="navbar__link">
-							<i class="fal fa-magic navbar__icon"></i>
-							<span class="navbar__text">Skills</span>
-						</a>
+						<a href="" class="navbar__link">Skills</a>
 					</li>
 					<li class="navbar__item">
-						<a href="" class="navbar__link">
-							<i class="fal fa-list-alt navbar__icon"></i>
-							<span class="navbar__text">Work</span>
-						</a>
+						<a href="" class="navbar__link">Work</a>
 					</li>
 					<li class="navbar__item">
-						<a href="" class="navbar__link">
-							<i class="fal fa-envelope navbar__icon"></i>
-							<span class="navbar__text">Contact</span>
-						</a>
+						<a href="" class="navbar__link">Contact</a>
 					</li>
 				</ul>
 			</nav>
-			<div class="profile">
-				<div class="profile__info">
-					<div class="profile__avatar">
-						<img src="avatar.jpg" alt="">
-					</div>
-					<span class="profile__name">Mr. Duy</span>
-					<span class="profile__position">Full stack developer</span>
-					<ul class="social__menu	">
-						<li class="social__item">
-							<a href="" class="social__link social__link--dribbble">
-								<i class="fab fa-dribbble"></i>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="" class="social__link social__link--facebook">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="" class="social__link social__link--linkedin">
-								<i class="fab fa-linkedin"></i>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="" class="social__link social__link--twitter">
-								<i class="fab fa-twitter"></i>
-							</a>
-						</li>
-					</ul>
-					<p class="profile__slogan">My code never has bugs. It just develops random unexpected features.</p>
-					<button class="btn btn--download">
-						<i class="fas fa-download"></i>
-						<span class="btn__text">Download my cv</span>
-					</button>
-				</div>
-			</div>
-		</aside>
-		<main>
-			<div id="home">
-				<h1>Hi, I'm Duy Tong</h1>
-				<h2 class="first-describe">A full stack developer</h2>
-				<ul class="social__menu">
-					<!-- <li class="social__item">
-						<a href="" class="social__link social__link--facebook">
-							<i class="fab fa-facebook-f"></i>
+		</div>
+		<div id="home">
+			<div class="name">Duy Tong</div>
+			<h1 class="work">Developer</h1>
+			<img src="http://uploads.webflow.com/593008e46c534e61e392e0f2/59326fbebaf9b1348967fa14_sep-white.svg" alt="">
+			<div class="social">
+				<ul class="social__list">
+					<li>
+						<a href="" class="social__link">
+							Dribbble
 						</a>
 					</li>
-					<li class="social__item">
-						<a href="" class="social__link social__link--twitter">
-							<i class="fab fa-twitter"></i>
+					<li class="social__dot">•</li>
+					<li>
+						<a href="" class="social__link">
+							Facebook
 						</a>
 					</li>
-					<li class="social__item">
-						<a href="" class="social__link social__link--dribbble">
-							<i class="fab fa-dribbble"></i>
+					<li class="social__dot">•</li>
+					<li>
+						<a href="" class="social__link">
+							Linkedin
 						</a>
-					</li> -->
+					</li>
+					<li class="social__dot">•</li>
+					<li>
+						<a href="" class="social__link">
+							Twitter
+						</a>
+					</li>
 				</ul>
 			</div>
-			<div id="about"></div>
-		</main>
+		</div>
 	</div>
+
+	<script src="js/app.js" defer></script>
 </body>
 </html>
