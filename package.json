@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "The portfolio for developers",
+  "main": "index.html",
+  "scripts": {
+    "scss": "node-sass -watch -o css scss/app.scss --import-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duytong/duytong.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "duytong"
+  ],
+  "author": "Duy Tong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duytong/duytong.github.io/issues"
+  },
+  "homepage": "https://duytong.github.io/",
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
+  }
+}
