@@ -1,0 +1,15 @@
+@mixin transition($duration) {
+	transition: all $duration ease-in-out;
+}
+
+@mixin pseudo-element {
+	position: absolute;
+	content: '';
+}
+
+@mixin position-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
