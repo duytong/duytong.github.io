@@ -522,13 +522,15 @@ ul {
     left: 0;
     flex-direction: column;
     opacity: 0;
+    visibility: hidden;
     background-color: rgba(0, 0, 0, 0.9);
     justify-content: center;
     transition: all 0.15s ease-in-out; }
-    /* line 168, scss/layout/_navbar.scss */
+    /* line 169, scss/layout/_navbar.scss */
     .navbar__list.show {
-      opacity: 1; }
-  /* line 174, scss/layout/_navbar.scss */
+      opacity: 1;
+      visibility: visible; }
+  /* line 176, scss/layout/_navbar.scss */
   .navbar__item {
     margin: 1rem 0;
     text-align: center; } }
@@ -559,7 +561,7 @@ ul {
     color: #fff; }
   /* line 27, scss/pages/_home.scss */
   #home .social {
-    margin-top: 2rem; }
+    margin-top: 1.75rem; }
     /* line 30, scss/pages/_home.scss */
     #home .social__list {
       display: flex;
@@ -570,48 +572,49 @@ ul {
     /* line 39, scss/pages/_home.scss */
     #home .social__link {
       position: relative;
-      color: #fff;
+      display: flex;
       width: 2rem;
       height: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      color: #fff;
+      border: 1px solid #fff;
       border-radius: 2px;
-      border: 1px solid #fff; }
-      /* line 51, scss/pages/_home.scss */
+      justify-content: center;
+      align-items: center; }
+      /* line 50, scss/pages/_home.scss */
       #home .social__link:hover {
         background-color: #fff;
         box-shadow: 0 0 0.5rem 0.25rem rgba(255, 255, 255, 0.1); }
-    /* line 60, scss/pages/_home.scss */
+    /* line 57, scss/pages/_home.scss */
     #home .social__link--dribbble:hover {
       color: #ea4c89; }
-    /* line 64, scss/pages/_home.scss */
+    /* line 61, scss/pages/_home.scss */
     #home .social__link--facebook:hover {
       color: #3b5999; }
-    /* line 68, scss/pages/_home.scss */
+    /* line 65, scss/pages/_home.scss */
     #home .social__link--github:hover {
       color: #131418; }
-    /* line 72, scss/pages/_home.scss */
+    /* line 69, scss/pages/_home.scss */
     #home .social__link--stack-overflow:hover {
       color: #f48024; }
-    /* line 78, scss/pages/_home.scss */
+    /* line 73, scss/pages/_home.scss */
     #home .social__text {
       position: absolute;
-      top: -2rem;
+      top: -1.75rem;
+      transform: scale(0);
+      white-space: nowrap;
       opacity: 0;
       color: #fff;
-      transform: scale(0);
-      transition: all 0.15s ease-in-out;
-      white-space: nowrap; }
-    /* line 88, scss/pages/_home.scss */
+      transition: all 0.15s ease-in-out; }
+    /* line 83, scss/pages/_home.scss */
     #home .social__link:hover .social__text {
-      opacity: 1;
-      transform: scale(1); }
+      transform: scale(1);
+      opacity: 1; }
 
 @media (max-width: 575px) {
-  /* line 96, scss/pages/_home.scss */
+  /* line 93, scss/pages/_home.scss */
   #home .work {
-    font-size: calc(14px * 2); } }
+    font-size: calc(14px * 2);
+    margin: .75rem 0 1.25rem; } }
 
 /*!
  * Font Awesome Pro 5.0.6 by @fontawesome - http://fontawesome.com

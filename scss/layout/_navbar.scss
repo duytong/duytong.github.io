@@ -161,12 +161,14 @@ width: 2rem;
 			left: 0;
 			flex-direction: column;
 			opacity: 0;
+			visibility: hidden;
 			background-color: rgba(#000, .9);
 			justify-content: center;
 			@include transition(.15s);
 
 			&.show {
 				opacity: 1;
+				visibility: visible;
 			}
 
 		}
