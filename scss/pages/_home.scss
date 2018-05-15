@@ -29,19 +29,71 @@
 
     &__list {
       display: flex;
+      align-items: center;
+    }
+
+    &__item {
+      margin: 0 1rem;
     }
 
     &__link {
+      position: relative;
       color: #fff;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2px;
+      border: 1px solid #fff;
+
 
       &:hover {
-        color: cyan;
+        background-color: #fff;
+        box-shadow: 0 0 0.5rem 0.25rem rgba(#fff,0.1)
       }
+
+
+
+     }
+
+    &__link--dribbble:hover {
+      color: #ea4c89;
     }
 
-    &__dot {
-      margin: 0 1rem;
-      color: #fff;
+    &__link--facebook:hover {
+      color: #3b5999;
     }
+
+    &__link--github:hover {
+      color: #131418;
+    }
+
+    &__link--stack-overflow:hover {
+      color: #f48024;
+    }
+
+    
+
+    &__text {
+      position: absolute;
+      top: -2rem;
+      opacity: 0;
+      color: #fff;
+      transform: scale(0);
+      @include transition(0.15s);
+      white-space: nowrap;
+    }
+
+    &__link:hover .social__text {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  #home .work {
+    font-size: calc(14px * 2);
   }
 }
