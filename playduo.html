@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Player Duo - Coaching Or Play Together</title>
+	<link rel="stylesheet" href="project/playduo/css/app.css">
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<div class="container">
+
+			<!-- Navbar -->
+			<nav class="navbar">
+				<img src="project/playduo/images/logo.png" alt="">
+				<div class="navbar__nav">
+					<div class="navbar__collapse">
+						<ul class="navbar__list">
+							<li class="navbar__item navbar__item--language">
+								<a href="">
+									<img src="project/playduo/images/flag-1.png" alt="">
+								</a>
+								<a href="">
+									<img src="project/playduo/images/flag-2.png" alt="">
+								</a>
+								<a href="">
+									<img src="project/playduo/images/flag-3.png" alt="">
+								</a>
+							</li>
+							<li class="navbar__item">
+								<a class="navbar__link" href="index.html">Home page</a>
+							</li>
+							<li class="navbar__item">
+								<a class="navbar__link" href="guide.html">Guide</a>
+							</li>
+							<li class="navbar__item">
+								<a class="navbar__link" href="#">Community</a>
+							</li>
+							<li class="navbar__item">
+								<a class="navbar__link" href="#">Fanpage</a>
+							</li>
+							<li class="navbar__item">
+								<a class="navbar__link" href="#">Player Card</a>
+							</li>
+							<li class="navbar__item">
+								<a class="navbar__link js-modal" data-target="#modal-ranking">Ranking</a>
+							</li>
+							<li class="navbar__item">
+								<a class="navbar__link" href="player-register">Player register</a>
+							</li>
+							<li class="navbar__item">
+								<a class="navbar__link" href="login.html">Login</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<a class="navbar__toggler">
+					<i class="fas fa-bars fa-2x"></i>
+				</a>
+			</nav>
+		</div>
+
+		<!-- Banner -->
+		<section class="banner">
+			<div class="container">
+				<img src="project/playduo/images/banner-content.png" alt="" class="banner__content">
+			</div>
+		</section>
+	</header>
+
+	<!-- Main -->
+	<div class="main">
+		<div class="container">
+			<!-- Home -->
+			<div class="home">
+
+				<!-- Filter Player -->
+				<section class="filter-player">
+					<div class="filter-player__option">
+						<div class="filter-player__section filter-player__section--gender">
+							<button class="btn active">
+								<i class="fas fa-genderless"></i>
+							</button>
+							<button class="btn">
+								<i class="fas fa-mars"></i>
+								<span class="btn__text">Male</span>
+							</button>
+							<button class="btn">
+								<i class="fas fa-venus"></i>
+								<span class="btn__text">Female</span>
+							</button>
+						</div>
+						<div class="filter-player__section filter-player__section--status">
+							<button class="btn active">
+								<i class="fab fa-blackberry"></i>
+							</button>
+							<button class="btn">
+								<i class="fas fa-spinner"></i>
+								<span class="btn__text">Available</span>
+							</button>
+						</div>
+						<div class="filter-player__section filter-player__section--level">
+							<button class="btn active">
+								<i class="fas fa-users"></i>
+							</button>
+							<button class="btn">
+								<i class="fas fa-user-circle"></i>
+								<span class="btn__text">New</span>
+							</button>
+							<button class="btn">
+								<i class="fas fa-user-secret"></i>
+								<span class="btn__text">Hot</span>
+							</button>
+							<button class="btn">
+								<i class="fab fa-napster"></i>
+								<span class="btn__text">Vip</span>
+							</button>
+						</div>
+						<div class="filter-player__section">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">
+										<i class="fas fa-user"></i>
+									</span>
+								</div>
+								<input type="text" class="form-control" placeholder="Nickname">
+							</div>
+						</div>
+						<div class="filter-player__section">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">
+										<i class="fas fa-gamepad"></i>
+									</span>
+								</div>
+								<input type="text" class="form-control" placeholder="Game name">
+							</div>
+						</div>
+					</div>
+					<button class="btn btn--pill btn--main">Search</button>
+				</section>
+
+				<!-- Vip Player -->
+				<section>
+					<h3 class="home__title">Vip player</h3>
+					<div class="row">
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-1.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Perspiciatis error molestiae occaecati commodi hic cupiditate fuga corrupti id. Beatae et eveniet ipsam neque iste.
+											Earum aperiam quas rerum iste dicta enim. Et aut numquam cupiditate. Similique est cupiditate hic repellat porro.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Alice Ward</span>
+										<i class="fas fa-circle text-success"></i>
+									</div>
+									<p class="player__description">Minima voluptate autem.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-lol.png" alt="">
+											<small>Lol</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">939.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-2.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Labore voluptatem nihil explicabo rerum officiis corrupti.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Miss Jeffry Dietrich</span>
+										<i class="fas fa-circle text-warning"></i>
+									</div>
+									<p class="player__description">Doloribus porro repellat impedit adipisci.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-other.png" alt="">
+											<small>Other</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">850.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-3.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Possimus dolorem rerum aperiam.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Ms. Jo O'Hara</span>
+										<i class="fas fa-circle text-success"></i>
+									</div>
+									<p class="player__description">Quasi enim rem quibusdam.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-pubg.png" alt="">
+											<small>Pubg</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">839.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-4.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Voluptatibus distinctio et.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Mrs. Faye Torp</span>
+										<i class="fas fa-circle text-danger"></i>
+									</div>
+									<p class="player__description">Eum sunt et porro dolorem aperiam nihil molestias.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-other.png" alt="">
+											<small>Other</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">98.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Hot Player -->
+				<section>
+					<h3 class="home__title">Hot player</h3>
+					<div class="row">
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-1.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Perspiciatis error molestiae occaecati commodi hic cupiditate fuga corrupti id. Beatae et eveniet ipsam neque iste.
+											Earum aperiam quas rerum iste dicta enim. Et aut numquam cupiditate. Similique est cupiditate hic repellat porro.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Alice Ward</span>
+										<i class="fas fa-circle text-success"></i>
+									</div>
+									<p class="player__description">Minima voluptate autem.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-lol.png" alt="">
+											<small>Lol</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">939.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-2.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Labore voluptatem nihil explicabo rerum officiis corrupti.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Miss Jeffry Dietrich</span>
+										<i class="fas fa-circle text-warning"></i>
+									</div>
+									<p class="player__description">Doloribus porro repellat impedit adipisci.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-other.png" alt="">
+											<small>Other</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">850.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-3.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Possimus dolorem rerum aperiam.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Ms. Jo O'Hara</span>
+										<i class="fas fa-circle text-success"></i>
+									</div>
+									<p class="player__description">Quasi enim rem quibusdam.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-pubg.png" alt="">
+											<small>Pubg</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">839.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-4.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Voluptatibus distinctio et.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Mrs. Faye Torp</span>
+										<i class="fas fa-circle text-danger"></i>
+									</div>
+									<p class="player__description">Eum sunt et porro dolorem aperiam nihil molestias.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-other.png" alt="">
+											<small>Other</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">98.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Refresh -->
+				<div class="refresh">
+					<button class="btn btn--pill btn--main">Refresh</button>
+				</div>
+
+				<!-- Renting -->
+				<section>
+					<h3 class="home__title">Reting (75890)</h3>
+					<div class="row">
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-1.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Perspiciatis error molestiae occaecati commodi hic cupiditate fuga corrupti id. Beatae et eveniet ipsam neque iste.
+											Earum aperiam quas rerum iste dicta enim. Et aut numquam cupiditate. Similique est cupiditate hic repellat porro.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Alice Ward</span>
+										<i class="fas fa-circle text-success"></i>
+									</div>
+									<p class="player__description">Minima voluptate autem.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-lol.png" alt="">
+											<small>Lol</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">939.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-2.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Labore voluptatem nihil explicabo rerum officiis corrupti.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Miss Jeffry Dietrich</span>
+										<i class="fas fa-circle text-warning"></i>
+									</div>
+									<p class="player__description">Doloribus porro repellat impedit adipisci.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-other.png" alt="">
+											<small>Other</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">850.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-3.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Possimus dolorem rerum aperiam.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Ms. Jo O'Hara</span>
+										<i class="fas fa-circle text-success"></i>
+									</div>
+									<p class="player__description">Quasi enim rem quibusdam.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-pubg.png" alt="">
+											<small>Pubg</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">839.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6">
+							<div class="player">
+								<div class="player__image">
+									<div class="object-fit">
+										<img src="project/playduo/images/player-4.jpg" alt="">
+									</div>
+									<div class="player__preview">
+										<p class="player__introduce">Voluptatibus distinctio et.</p>
+										<div class="player__rent">
+											<a href="" class="btn" target="blank">Rent now</a>
+										</div>
+										<div class="player__social">
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+											<a href="" class="btn btn--small btn--main" target="blank">
+												<i class="fab fa-facebook"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a href="" class="player__info" target="blank">
+									<div class="player__name">
+										<span>Mrs. Faye Torp</span>
+										<i class="fas fa-circle text-danger"></i>
+									</div>
+									<p class="player__description">Eum sunt et porro dolorem aperiam nihil molestias.</p>
+									<div class="player__cost">
+										<div class="player__game">
+											<img src="project/playduo/images/game-other.png" alt="">
+											<small>Other</small>
+										</div>
+										<span class="btn btn--small btn--pill btn--main">98.00$/h</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-7">
+					<div class="info">
+						<p>Player Duo is a gamer connect system, operated by Ylinkee.,ltd</p>
+						<p>With Player Duo, you will easy searching teammates, coachers is pro player, streamer. When play with pro player , your
+							skill will fast improved.</p>
+					</div>
+				</div>
+				<div class="col-xl-5">
+					<div class="contact">
+						<div class="dmca">
+							<img src="project/playduo/images/dmca.png" alt="">
+						</div>
+						<p>Address: 70 Phan Thanh, Hai Chau District, Da Nang, Viet Nam</p>
+						<p>Email: support@mideman.com</p>
+						<p>Hotline: 0905.499.170</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal Ranking -->
+	<div class="modal" id="modal-ranking">
+		<div class="modal__dialog">
+			<div class="modal__content modal__content--border">
+				<div class="modal__header">
+					<h5 class="modal__title">Ranking rich</h5>
+				</div>
+				<div class="modal__body">
+					<div class="tab">
+						<ul class="tab__list">
+							<li class="tab__item">
+								<a class="tab__link active js-tab" href="#today">Today</a>
+							</li>
+							<li class="tab__item">
+								<a class="tab__link js-tab" href="#week">Week</a>
+							</li>
+							<li class="tab__item">
+								<a class="tab__link js-tab" href="#month">Month</a>
+							</li>
+						</ul>
+						<div class="tab__pane show" id="today">
+							<ul class="ranking">
+								<li class="ranking__item">
+									<div class="ranking__top">
+										<img src="project/playduo/images/avatar-1.jpg" alt="" class="avatar">
+									</div>
+									<a class="ranking__user js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
+									<span class="ranking__money">967.00$</span>
+
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#2</span>
+										<img src="project/playduo/images/avatar-2.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Thad Herzog</a>
+									</div>
+									<span>883.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#3</span>
+										<img src="project/playduo/images/avatar-3.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Dejuan Cassin</a>
+									</div>
+									<span>69.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#4</span>
+										<img src="project/playduo/images/avatar-4.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Missouri Murazik</a>
+									</div>
+									<span>336.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#5</span>
+										<img src="project/playduo/images/avatar-5.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Ceasar Wehner</a>
+									</div>
+									<span>263.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#6</span>
+										<img src="project/playduo/images/avatar-6.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Cecile Grant</a>
+									</div>
+									<span>739.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#7</span>
+										<img src="project/playduo/images/avatar-7.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Merritt Bauch</a>
+									</div>
+									<span>525.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#8</span>
+										<img src="project/playduo/images/avatar-8.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Kellen O'Connell</a>
+									</div>
+									<span>502.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#9</span>
+										<img src="project/playduo/images/avatar-9.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Annalise Von</a>
+									</div>
+									<span>8.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#10</span>
+										<img src="project/playduo/images/avatar-10.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Candelario Huel</a>
+									</div>
+									<span>389.00$</span>
+								</li>
+							</ul>
+						</div>
+						<div class="tab__pane" id="week">
+							<ul class="ranking">
+								<li class="ranking__item">
+									<div class="ranking__top">
+										<img src="project/playduo/images/avatar-1.jpg" alt="" class="avatar">
+									</div>
+									<a class="ranking__user js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
+									<span class="ranking__money">967.00$</span>
+
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#2</span>
+										<img src="project/playduo/images/avatar-2.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Thad Herzog</a>
+									</div>
+									<span>883.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#3</span>
+										<img src="project/playduo/images/avatar-3.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Dejuan Cassin</a>
+									</div>
+									<span>69.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#4</span>
+										<img src="project/playduo/images/avatar-4.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Missouri Murazik</a>
+									</div>
+									<span>336.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#5</span>
+										<img src="project/playduo/images/avatar-5.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Ceasar Wehner</a>
+									</div>
+									<span>263.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#6</span>
+										<img src="project/playduo/images/avatar-6.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Cecile Grant</a>
+									</div>
+									<span>739.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#7</span>
+										<img src="project/playduo/images/avatar-7.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Merritt Bauch</a>
+									</div>
+									<span>525.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#8</span>
+										<img src="project/playduo/images/avatar-8.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Kellen O'Connell</a>
+									</div>
+									<span>502.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#9</span>
+										<img src="project/playduo/images/avatar-9.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Annalise Von</a>
+									</div>
+									<span>8.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#10</span>
+										<img src="project/playduo/images/avatar-10.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Candelario Huel</a>
+									</div>
+									<span>389.00$</span>
+								</li>
+							</ul>
+						</div>
+						<div class="tab__pane" id="month">
+							<ul class="ranking">
+								<li class="ranking__item">
+									<div class="ranking__top">
+										<img src="project/playduo/images/avatar-1.jpg" alt="" class="avatar">
+									</div>
+									<a class="ranking__user js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
+									<span class="ranking__money">967.00$</span>
+
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#2</span>
+										<img src="project/playduo/images/avatar-2.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Thad Herzog</a>
+									</div>
+									<span>883.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#3</span>
+										<img src="project/playduo/images/avatar-3.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Dejuan Cassin</a>
+									</div>
+									<span>69.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#4</span>
+										<img src="project/playduo/images/avatar-4.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Missouri Murazik</a>
+									</div>
+									<span>336.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#5</span>
+										<img src="project/playduo/images/avatar-5.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Ceasar Wehner</a>
+									</div>
+									<span>263.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#6</span>
+										<img src="project/playduo/images/avatar-6.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Cecile Grant</a>
+									</div>
+									<span>739.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#7</span>
+										<img src="project/playduo/images/avatar-7.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Merritt Bauch</a>
+									</div>
+									<span>525.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#8</span>
+										<img src="project/playduo/images/avatar-8.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Kellen O'Connell</a>
+									</div>
+									<span>502.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#9</span>
+										<img src="project/playduo/images/avatar-9.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Annalise Von</a>
+									</div>
+									<span>8.00$</span>
+								</li>
+								<li class="ranking__item">
+									<div class="ranking__user">
+										<span>#10</span>
+										<img src="project/playduo/images/avatar-10.jpg" alt="" class="avatar">
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Candelario Huel</a>
+									</div>
+									<span>389.00$</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal__footer">
+					<button class="btn btn--info">Ranking rich</button>
+					<button class="btn btn--info">Ranking income</button>
+					<button class="btn btn--secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal User -->
+	<div class="modal" id="modal-user">
+		<div class="modal__dialog modal__dialog--centered">
+			<div class="modal__content">
+				<div class="user">
+					<img src="project/playduo/images/avatar-1.jpg" alt="" class="avatar">
+					<div class="user__info">
+						<div class="user__vip">
+							<a href="" class="js-modal" data-target="#modal-vip">
+								<img src="project/playduo/images/vip-1.png" alt="">
+							</a>
+							<span class="user__name vip-color-1">Ernesto Hilpert</span>
+						</div>
+						<div>
+							<a href="" class="btn btn--main" target="blank">
+								<i class="fab fa-facebook"></i>
+							</a>
+							<button class="btn btn--secondary" data-dismiss="modal">Đóng</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Vip -->
+	<div class="modal" id="modal-vip">
+		<div class="modal__dialog">
+			<div class="modal__content modal__content--border">
+				<div class="wrap-table">
+					<table class="table table--bordered">
+						<thead>
+							<tr>
+								<th>Title</th>
+								<th>Total spend</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-1.png" alt="" class="vip-lg">
+								</td>
+								<td>326.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-2.png" alt="" class="vip-lg">
+								</td>
+								<td>728.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-3.png" alt="" class="vip-lg">
+								</td>
+								<td>359.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-4.png" alt="" class="vip-lg">
+								</td>
+								<td>899.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-5.png" alt="" class="vip-lg">
+								</td>
+								<td>471.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-6.png" alt="" class="vip-lg">
+								</td>
+								<td>297.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-7.png" alt="" class="vip-lg">
+								</td>
+								<td>937.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-8.png" alt="" class="vip-lg">
+								</td>
+								<td>723.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-9.png" alt="" class="vip-lg">
+								</td>
+								<td>544.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-10.png" alt="" class="vip-lg">
+								</td>
+								<td>244.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-11.png" alt="" class="vip-lg">
+								</td>
+								<td>789.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-12.png" alt="" class="vip-lg">
+								</td>
+								<td>51.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-13.png" alt="" class="vip-lg">
+								</td>
+								<td>100.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-14.png" alt="" class="vip-lg">
+								</td>
+								<td>836.00$</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="project/playduo/images/vip-15.png" alt="" class="vip-lg">
+								</td>
+								<td>884.00$</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal__footer">
+					<button class="btn btn--info js-modal" data-target="#modal-ranking">Top rich</button>
+					<button class="btn btn--info js-modal" data-target="#modal-ranking">Top income</button>
+					<button class="btn btn--secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="project/playduo/js/app.js" defer></script>
+</body>
+
+</html>
