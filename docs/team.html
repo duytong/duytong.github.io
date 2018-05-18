@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Player Duo - Coaching Or Play Together</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <img src="images/logo.png" alt="">
+                <div class="navbar__nav">
+                    <div class="navbar__collapse">
+                        <ul class="navbar__list">
+                            <li class="navbar__item navbar__item--language">
+                                <a href="">
+                                    <img src="images/flag-1.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="images/flag-2.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="images/flag-3.png" alt="">
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="index.html">Home page</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="guide.html">Guide</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#">Community</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#">Fanpage</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="#">Agency player card</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link js-modal" data-target="#modal-ranking">Ranking</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="player-register.html">Player register</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" href="login.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="navbar__toggler">
+                    <i class="fas fa-bars fa-2x"></i>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Banner -->
+        <section class="banner">
+            <div class="container">
+                <img src="images/banner-content.png" alt="" class="banner__content">
+            </div>
+        </section>
+    </header>
+
+    <!-- Main -->
+    <div class="main">
+        <div class="container">
+
+            <!-- Team -->
+            <section class="team">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-3 col-xl-2">
+                        <div class="team__profile">
+                            <div class="team__image object-fit">
+                                <img src="images/player-2.jpg" alt="">
+                            </div>
+                            <button class="btn btn--info">
+                                <i class="fas fa-plus"></i>
+                                <span class="btn__text">Join team</span>
+                            </button>
+                            <button class="btn btn--main">
+                                <i class="fas fa-user-plus"></i>
+                                <span class="btn__text">Follow</span>
+                            </button>
+                            <span class="team__name">Team Korean</span>
+                            <ul class="team__detail">
+                                <li>
+                                    <span>Follower</span>
+                                    <span class="text-success">17</span>
+                                </li>
+                                <li>
+                                    <span>Finish</span>
+                                    <span>49 request</span>
+                                </li>
+                                <li>
+                                    <span>Total income</span>
+                                    <span>5,725.19$</span>
+                                </li>
+                                <li>
+                                    <span>Finish rate</span>
+                                    <span>39%</span>
+                                </li>
+                                <li>
+                                    <span>Avg rating</span>
+                                    <span>1.6/5</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-lg-9 col-xl-10">
+                        <div class="team__info">
+                            <img src="images/team-bg.jpg" alt="">
+                            <h2 class="heading">Info</h2>
+                            <div class="members">
+                                <h2 class="heading">Members</h2>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="members__item">
+                                            <div class="members__avatar object-fit">
+                                                <img src="images/player-1.jpg" alt="">
+                                            </div>
+                                            <div class="members__info">
+                                                <div class="members__name">
+                                                    <span>Trycia Reichel</span>
+                                                    <i class="fas fa-circle text-success"></i>
+                                                </div>
+                                                <p>Unde tempore inventore nulla minima. Quis aperiam possimus consequatur laudantium
+                                                    nemo omnis eveniet quas et. Est harum nesciunt velit.</p>
+                                                <span class="btn btn--small btn--pill btn--main">358.00$/h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="members__item">
+                                            <div class="members__avatar object-fit">
+                                                <img src="images/player-2.jpg" alt="">
+                                            </div>
+                                            <div class="members__info">
+                                                <div class="members__name">
+                                                    <span>Krystal Pagac</span>
+                                                    <i class="fas fa-circle text-warning"></i>
+                                                </div>
+                                                <p>Labore voluptates id iure omnis itaque qui nisi. Assumenda earum corporis.
+                                                    Sunt officiis tenetur nesciunt quasi.</p>
+                                                <span class="btn btn--small btn--pill btn--main">119.00$/h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="members__item">
+                                            <div class="members__avatar object-fit">
+                                                <img src="images/player-3.jpg" alt="">
+                                            </div>
+                                            <div class="members__info">
+                                                <div class="members__name">
+                                                    <span>Alf Abshire</span>
+                                                    <i class="fas fa-circle text-danger"></i>
+                                                </div>
+                                                <p>Nobis et totam et quam dicta autem beatae nihil. Vel amet in eius vero dicta.</p>
+                                                <span class="btn btn--small btn--pill btn--main">687.00$/h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="members__item">
+                                            <div class="members__avatar object-fit">
+                                                <img src="images/player-3.jpg" alt="">
+                                            </div>
+                                            <div class="members__info">
+                                                <div class="members__name">
+                                                    <span>Alf Abshire</span>
+                                                    <i class="fas fa-circle text-danger"></i>
+                                                </div>
+                                                <p>Nobis et totam et quam dicta autem beatae nihil. Vel amet in eius vero dicta.</p>
+                                                <span class="btn btn--small btn--pill btn--main">687.00$/h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="heading">Album</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review__count">53155 review</div>
+                    <ul class="review__list">
+                        <li class="review__item">
+                            <div class="review__image">
+                                <img src="images/player-1.jpg" alt="">
+                            </div>
+                            <div class="review__detail">
+                                <div class="review__info">
+                                    <div class="review__owner">
+                                        <a class="vip js-modal" data-target="#modal-ranking">
+                                            <img src="images/vip-1.png" alt="">
+                                        </a>
+                                        <span class="vip-color-1">Roderick Robel</span>
+                                        <small>(Fri May 18 2018 06:06:10)</small>
+                                    </div>
+                                    <div class="review__rating">
+                                        <small>(rent 67789 hours)</small>
+                                        <div>
+                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review__content">Ut reprehenderit consequat proident.</p>
+                            </div>
+                        </li>
+                        <li class="review__item">
+                            <div class="review__image">
+                                <img src="images/player-1.jpg" alt="">
+                            </div>
+                            <div class="review__detail">
+                                <div class="review__info">
+                                    <div class="review__owner">
+                                        <a class="vip js-modal" data-target="#modal-ranking">
+                                            <img src="images/vip-2.png" alt="">
+                                        </a>
+                                        <span class="vip-color-2">Dr. Rigoberto Klocko</span>
+                                        <small>(Thu May 17 2018 22:08:59)</small>
+                                    </div>
+                                    <div class="review__rating">
+                                        <small>(rent 55441 hours)</small>
+                                        <div>
+                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review__content">Voluptates vel sed ullam.</p>
+                            </div>
+                        </li>
+                        <li class="review__item">
+                            <div class="review__image">
+                                <img src="images/player-1.jpg" alt="">
+                            </div>
+                            <div class="review__detail">
+                                <div class="review__info">
+                                    <div class="review__owner">
+                                        <a class="vip js-modal" data-target="#modal-ranking">
+                                            <img src="images/vip-3.png" alt="">
+                                        </a>
+                                        <span class="vip-color-3">Weldon MacGyver</span>
+                                        <small>(Fri May 18 2018 04:30:06)</small>
+                                    </div>
+                                    <div class="review__rating">
+                                        <small>(rent 37350 hours)</small>
+                                        <div>
+                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review__content">Molestiae culpa dignissimos et voluptatem tempora architecto dolorem.</p>
+                            </div>
+                        </li>
+                        <li class="review__item">
+                            <div class="review__image">
+                                <img src="images/player-1.jpg" alt="">
+                            </div>
+                            <div class="review__detail">
+                                <div class="review__info">
+                                    <div class="review__owner">
+                                        <a class="vip js-modal" data-target="#modal-ranking">
+                                            <img src="images/vip-4.png" alt="">
+                                        </a>
+                                        <span class="vip-color-4">Zoila Klein PhD</span>
+                                        <small>(Fri May 18 2018 04:41:39)</small>
+                                    </div>
+                                    <div class="review__rating">
+                                        <small>(rent 32343 hours)</small>
+                                        <div>
+                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review__content">Non at odit eum et.</p>
+                            </div>
+                        </li>
+                        <li class="review__item">
+                            <div class="review__image">
+                                <img src="images/player-1.jpg" alt="">
+                            </div>
+                            <div class="review__detail">
+                                <div class="review__info">
+                                    <div class="review__owner">
+                                        <a class="vip js-modal" data-target="#modal-ranking">
+                                            <img src="images/vip-5.png" alt="">
+                                        </a>
+                                        <span class="vip-color-5">Westley Hegmann</span>
+                                        <small>(Thu May 17 2018 22:18:20)</small>
+                                    </div>
+                                    <div class="review__rating">
+                                        <small>(rent 1518 hours)</small>
+                                        <div>
+                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review__content">Rerum culpa quisquam tempore et itaque nihil exercitationem.</p>
+                            </div>
+                        </li>
+                        <li class="review__item">
+                            <div class="review__image">
+                                <img src="images/player-1.jpg" alt="">
+                            </div>
+                            <div class="review__detail">
+                                <div class="review__info">
+                                    <div class="review__owner">
+                                        <a class="vip js-modal" data-target="#modal-ranking">
+                                            <img src="images/vip-6.png" alt="">
+                                        </a>
+                                        <span class="vip-color-6">Giles Mertz</span>
+                                        <small>(Fri May 18 2018 12:35:54)</small>
+                                    </div>
+                                    <div class="review__rating">
+                                        <small>(rent 16496 hours)</small>
+                                        <div>
+                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review__content">Est totam necessitatibus qui veniam neque ea et optio ut.</p>
+                            </div>
+                        </li>
+                        <li class="review__item">
+                            <div class="review__image">
+                                <img src="images/player-1.jpg" alt="">
+                            </div>
+                            <div class="review__detail">
+                                <div class="review__info">
+                                    <div class="review__owner">
+                                        <a class="vip js-modal" data-target="#modal-ranking">
+                                            <img src="images/vip-7.png" alt="">
+                                        </a>
+                                        <span class="vip-color-7">Athena Von</span>
+                                        <small>(Thu May 17 2018 19:03:00)</small>
+                                    </div>
+                                    <div class="review__rating">
+                                        <small>(rent 63109 hours)</small>
+                                        <div>
+                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review__content">Sit a et et rerum aut deserunt sunt alias.</p>
+                            </div>
+                        </li>
+                        <li class="review__item">
+                            <div class="review__image">
+                                <img src="images/player-1.jpg" alt="">
+                            </div>
+                            <div class="review__detail">
+                                <div class="review__info">
+                                    <div class="review__owner">
+                                        <a class="vip js-modal" data-target="#modal-ranking">
+                                            <img src="images/vip-8.png" alt="">
+                                        </a>
+                                        <span class="vip-color-8">Kelley O'Kon</span>
+                                        <small>(Fri May 18 2018 09:18:21)</small>
+                                    </div>
+                                    <div class="review__rating">
+                                        <small>(rent 76985 hours)</small>
+                                        <div>
+                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review__content">Nostrum qui voluptas quia mollitia sit.</p>
+                            </div>
+                        </li>
+                        <li class="review__item">
+                            <div class="review__image">
+                                <img src="images/player-1.jpg" alt="">
+                            </div>
+                            <div class="review__detail">
+                                <div class="review__info">
+                                    <div class="review__owner">
+                                        <a class="vip js-modal" data-target="#modal-ranking">
+                                            <img src="images/vip-9.png" alt="">
+                                        </a>
+                                        <span class="vip-color-9">Clinton Larkin</span>
+                                        <small>(Thu May 17 2018 23:31:44)</small>
+                                    </div>
+                                    <div class="review__rating">
+                                        <small>(rent 45339 hours)</small>
+                                        <div>
+                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review__content">Ut eaque labore tempore error dolorum.</p>
+                            </div>
+                        </li>
+                        <li class="review__item">
+                            <div class="review__image">
+                                <img src="images/player-1.jpg" alt="">
+                            </div>
+                            <div class="review__detail">
+                                <div class="review__info">
+                                    <div class="review__owner">
+                                        <a class="vip js-modal" data-target="#modal-ranking">
+                                            <img src="images/vip-10.png" alt="">
+                                        </a>
+                                        <span class="vip-color-10">Lina Wisozk</span>
+                                        <small>(Fri May 18 2018 14:36:16)</small>
+                                    </div>
+                                    <div class="review__rating">
+                                        <small>(rent 69054 hours)</small>
+                                        <div>
+                                            <i class="far fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="review__content">Temporibus aliquam in ut dolorem.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link active">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">5</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7">
+                    <div class="info">
+                        <p>Player Duo is a gamer connect system, operated by Ylinkee.,ltd</p>
+                        <p>With Player Duo, you will easy searching teammates, coachers is pro player, streamer. When play with
+                            pro player , your skill will fast improved.</p>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="contact">
+                        <div class="dmca">
+                            <img src="images/dmca.png" alt="">
+                        </div>
+                        <p>Address: 70 Phan Thanh, Hai Chau District, Da Nang, Viet Nam</p>
+                        <p>Email: support@mideman.com</p>
+                        <p>Hotline: 0905.499.170</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Ranking -->
+    <div class="modal" id="modal-ranking">
+        <div class="modal__dialog">
+            <div class="modal__content modal__content--border">
+                <div class="modal__header">
+                    <h5 class="modal__title">Ranking rich</h5>
+                </div>
+                <div class="modal__body">
+                    <div class="tab">
+                        <ul class="tab__list">
+                            <li class="tab__item">
+                                <a class="tab__link active js-tab" href="#today">Today</a>
+                            </li>
+                            <li class="tab__item">
+                                <a class="tab__link js-tab" href="#week">Week</a>
+                            </li>
+                            <li class="tab__item">
+                                <a class="tab__link js-tab" href="#month">Month</a>
+                            </li>
+                        </ul>
+                        <div class="tab__pane show" id="today">
+                            <ul class="ranking">
+                                <li class="ranking__item">
+                                    <div class="ranking__top">
+                                        <img src="images/avatar-1.jpg" alt="" class="avatar">
+                                    </div>
+                                    <a class="ranking__user js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
+                                    <span class="ranking__money">967.00$</span>
+
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#2</span>
+                                        <img src="images/avatar-2.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Thad Herzog</a>
+                                    </div>
+                                    <span>883.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#3</span>
+                                        <img src="images/avatar-3.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Dejuan Cassin</a>
+                                    </div>
+                                    <span>69.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#4</span>
+                                        <img src="images/avatar-4.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Missouri Murazik</a>
+                                    </div>
+                                    <span>336.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#5</span>
+                                        <img src="images/avatar-5.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Ceasar Wehner</a>
+                                    </div>
+                                    <span>263.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#6</span>
+                                        <img src="images/avatar-6.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Cecile Grant</a>
+                                    </div>
+                                    <span>739.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#7</span>
+                                        <img src="images/avatar-7.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Merritt Bauch</a>
+                                    </div>
+                                    <span>525.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#8</span>
+                                        <img src="images/avatar-8.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Kellen O'Connell</a>
+                                    </div>
+                                    <span>502.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#9</span>
+                                        <img src="images/avatar-9.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Annalise Von</a>
+                                    </div>
+                                    <span>8.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#10</span>
+                                        <img src="images/avatar-10.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Candelario Huel</a>
+                                    </div>
+                                    <span>389.00$</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab__pane show" id="week">
+                            <ul class="ranking">
+                                <li class="ranking__item">
+                                    <div class="ranking__top">
+                                        <img src="images/avatar-1.jpg" alt="" class="avatar">
+                                    </div>
+                                    <a class="ranking__user js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
+                                    <span class="ranking__money">967.00$</span>
+
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#2</span>
+                                        <img src="images/avatar-2.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Thad Herzog</a>
+                                    </div>
+                                    <span>883.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#3</span>
+                                        <img src="images/avatar-3.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Dejuan Cassin</a>
+                                    </div>
+                                    <span>69.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#4</span>
+                                        <img src="images/avatar-4.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Missouri Murazik</a>
+                                    </div>
+                                    <span>336.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#5</span>
+                                        <img src="images/avatar-5.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Ceasar Wehner</a>
+                                    </div>
+                                    <span>263.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#6</span>
+                                        <img src="images/avatar-6.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Cecile Grant</a>
+                                    </div>
+                                    <span>739.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#7</span>
+                                        <img src="images/avatar-7.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Merritt Bauch</a>
+                                    </div>
+                                    <span>525.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#8</span>
+                                        <img src="images/avatar-8.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Kellen O'Connell</a>
+                                    </div>
+                                    <span>502.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#9</span>
+                                        <img src="images/avatar-9.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Annalise Von</a>
+                                    </div>
+                                    <span>8.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#10</span>
+                                        <img src="images/avatar-10.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Candelario Huel</a>
+                                    </div>
+                                    <span>389.00$</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab__pane show" id="month">
+                            <ul class="ranking">
+                                <li class="ranking__item">
+                                    <div class="ranking__top">
+                                        <img src="images/avatar-1.jpg" alt="" class="avatar">
+                                    </div>
+                                    <a class="ranking__user js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
+                                    <span class="ranking__money">967.00$</span>
+
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#2</span>
+                                        <img src="images/avatar-2.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Thad Herzog</a>
+                                    </div>
+                                    <span>883.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#3</span>
+                                        <img src="images/avatar-3.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Dejuan Cassin</a>
+                                    </div>
+                                    <span>69.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#4</span>
+                                        <img src="images/avatar-4.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Missouri Murazik</a>
+                                    </div>
+                                    <span>336.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#5</span>
+                                        <img src="images/avatar-5.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Ceasar Wehner</a>
+                                    </div>
+                                    <span>263.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#6</span>
+                                        <img src="images/avatar-6.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Cecile Grant</a>
+                                    </div>
+                                    <span>739.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#7</span>
+                                        <img src="images/avatar-7.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Merritt Bauch</a>
+                                    </div>
+                                    <span>525.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#8</span>
+                                        <img src="images/avatar-8.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Kellen O'Connell</a>
+                                    </div>
+                                    <span>502.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#9</span>
+                                        <img src="images/avatar-9.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Annalise Von</a>
+                                    </div>
+                                    <span>8.00$</span>
+                                </li>
+                                <li class="ranking__item">
+                                    <div class="ranking__user">
+                                        <span>#10</span>
+                                        <img src="images/avatar-10.jpg" alt="" class="avatar">
+                                        <a class="js-modal" data-target="#modal-user" data-dismiss="modal">Candelario Huel</a>
+                                    </div>
+                                    <span>389.00$</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <button class="btn btn--info">Ranking rich</button>
+                    <button class="btn btn--info">Ranking income</button>
+                    <button class="btn btn--secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal User -->
+    <div class="modal" id="modal-user">
+        <div class="modal__dialog modal__dialog--centered">
+            <div class="modal__content">
+                <div class="user">
+                    <img src="images/avatar-1.jpg" alt="" class="avatar">
+                    <div class="user__info">
+                        <div class="user__vip">
+                            <a href="" class="js-modal" data-target="#modal-vip">
+                                <img src="images/vip-1.png" alt="">
+                            </a>
+                            <span class="user__name vip-color-1">Ernesto Hilpert</span>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn--main" target="blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <button class="btn btn--secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Vip -->
+    <div class="modal" id="modal-vip">
+        <div class="modal__dialog">
+            <div class="modal__content modal__content--border">
+                <div class="wrap-table">
+                    <table class="table table--bordered">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Total spend</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-1.png" alt="" class="vip-lg">
+                                </td>
+                                <td>326.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-2.png" alt="" class="vip-lg">
+                                </td>
+                                <td>728.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-3.png" alt="" class="vip-lg">
+                                </td>
+                                <td>359.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-4.png" alt="" class="vip-lg">
+                                </td>
+                                <td>899.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-5.png" alt="" class="vip-lg">
+                                </td>
+                                <td>471.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-6.png" alt="" class="vip-lg">
+                                </td>
+                                <td>297.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-7.png" alt="" class="vip-lg">
+                                </td>
+                                <td>937.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-8.png" alt="" class="vip-lg">
+                                </td>
+                                <td>723.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-9.png" alt="" class="vip-lg">
+                                </td>
+                                <td>544.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-10.png" alt="" class="vip-lg">
+                                </td>
+                                <td>244.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-11.png" alt="" class="vip-lg">
+                                </td>
+                                <td>789.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-12.png" alt="" class="vip-lg">
+                                </td>
+                                <td>51.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-13.png" alt="" class="vip-lg">
+                                </td>
+                                <td>100.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-14.png" alt="" class="vip-lg">
+                                </td>
+                                <td>836.00$</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/vip-15.png" alt="" class="vip-lg">
+                                </td>
+                                <td>884.00$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal__footer">
+                    <button class="btn btn--info js-modal" data-target="#modal-ranking">Top rich</button>
+                    <button class="btn btn--info js-modal" data-target="#modal-ranking">Top income</button>
+                    <button class="btn btn--secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>
