@@ -1,0 +1,35 @@
+.login {
+	display: flex;
+	flex-direction: column;
+	width: 340px;
+	margin: auto;
+
+	&__title {
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 0 0 1rem;
+		text-align: center;
+		text-transform: uppercase;
+		color: $main-color;
+		border-bottom: 5px solid $main-color;
+	}
+
+	.btn {
+		font-weight: 700;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+	}
+
+	&__option {
+		font-size: 24px;
+		font-weight: 700;
+		margin: 1rem 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.form-control {
+		text-align: center;
+	}
+
+}

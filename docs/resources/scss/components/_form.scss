@@ -1,0 +1,42 @@
+.form-group {
+	margin-bottom: 1rem;
+}
+
+.input-group {
+	display: flex;
+	width: 100%;
+
+	&-prepend {
+		display: flex;
+	}
+
+	&-text {
+		display: flex;
+		padding: .375rem .75rem;
+		border: 1px solid #ced4da;
+		border-right: 0;
+		border-top-left-radius: $radius;
+		border-bottom-left-radius: $radius;
+		align-items: center;
+	}
+
+}
+
+.form-control {
+	line-height: 1.5;
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	color: #495057;
+	border: 1px solid #ced4da;
+	border-radius: $radius;
+	background-color: #fff;
+	background-clip: padding-box;
+	@include transition(.15s);
+	@include input-placeholder(#6c757d);
+
+	&:focus {
+		border-color: #80bdff;
+	}
+
+}

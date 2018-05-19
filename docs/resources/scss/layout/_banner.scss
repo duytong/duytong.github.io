@@ -1,0 +1,27 @@
+.banner {
+	position: relative;
+	height: 435px;
+	background: url('../images/banner-bg.png') no-repeat center #131313;
+
+	&::before {
+		width: 100%;
+		height: 100%;
+		background: url('../images/banner-layer.png') center;
+		@include pseudo-element;
+	}
+
+	.container {
+		position: relative;
+		height: 100%;
+	}
+
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		transform: translateY(-50%);
+		filter: drop-shadow(5px 5px 5px #222);
+	}
+
+}

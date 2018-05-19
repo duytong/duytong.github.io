@@ -1,0 +1,23 @@
+.table {
+	width: 100%;
+	border-collapse: collapse;
+
+	th,
+	td {
+		padding: .75rem;
+	}
+
+	th {
+		font-weight: 500;
+		text-align: left;
+	}
+
+	&--bordered {
+		th,
+		td {
+			border: 1px solid $dark-color;
+		}
+
+	}
+
+}

@@ -1,0 +1,362 @@
+.player {
+	&__profile {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1rem;
+
+		.btn {
+			font-weight: 500;
+			margin-top: .5rem;
+			text-transform: uppercase;
+		}
+
+	}
+
+	&__image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+
+	}
+
+	&__team-title {
+		font-weight: 500;
+		margin: .5rem 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__team-name {
+		text-align: center;
+
+		span {
+			font-weight: 500;
+			text-align: center;
+		}
+
+	}
+
+	&__detail {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1rem;
+
+		li {
+			display: flex;
+			flex-direction: column;
+
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+
+			span {
+				&:first-child {
+					font-weight: 500;
+				}
+
+				&:last-child {
+					color: $secondary-color;
+				}
+
+			}
+
+		}
+
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+
+		& > p {
+			margin: 1rem 0;
+		}
+
+	}
+
+	&__overview {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__basic-info {
+		display: flex;
+		flex-direction: column;
+		margin-right: 1rem;
+	}
+
+	&__name {
+		font-size: 18px;
+		color: $main-color;
+
+		i {
+			color: $primary-color;
+		}
+
+	}
+
+	&__social {
+		display: flex;
+
+		li:not(:last-child) {
+			margin-right: .5rem;
+		}
+
+	}
+
+	&__list-image {
+		display: flex;
+
+		.object-fit:not(:last-child) {
+			margin-right: 1rem;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+
+	&__donate {
+		display: flex;
+		flex-direction: column;
+
+		&-title {
+			font-size: 20px;
+			font-weight: 700;
+			margin: 1rem 0;
+			letter-spacing: -1px;
+			text-transform: uppercase;
+			color: $main-color;
+			border-bottom: 2px solid $main-color;
+		}
+
+		&-item {
+			display: flex;
+			margin-bottom: .5rem;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&-info {
+			display: flex;
+			align-items: center;
+
+			a {
+				display: flex;
+				margin: 0 .5rem 0 1rem;
+				align-items: center;
+			}
+
+			img {
+				width: 45px;
+			}
+
+		}
+
+		&-order {
+			width: 1.5rem;
+		}
+
+	}
+
+}
+
+.review {
+	margin-top: 2rem;
+
+	&__count {
+		font-weight: 500;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1rem;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+
+	}
+
+	&__image {
+		display: flex;
+		margin-right: .5rem;
+
+		img {
+			width: 50px;
+			height: 50px;
+			object-fit: cover;
+		}
+
+	}
+
+	&__detail {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__owner {
+		display: flex;
+		align-items: center;
+
+		.vip {
+			display: flex;
+			margin-right: .5rem;
+			align-items: center;
+
+			img {
+				width: 45px;
+			}
+
+		}
+
+		span {
+			font-weight: 700;
+			margin-right: .5rem;
+		}
+
+		small {
+			color: $secondary-color;
+
+			&:not(:last-child) {
+				margin-right: .5rem;
+			}
+
+		}
+
+	}
+
+	&__rating {
+		display: flex;
+		align-items: center;
+
+		small {
+			margin-right: .5rem;
+			color: $secondary-color;
+		}
+
+		i {
+			color: $main-color;
+
+			&:not(:last-child) {
+				margin-right: .25rem;
+			}
+
+		}
+
+	}
+
+	&__content {
+		margin-bottom: 0;
+		color: darken($secondary-color, 5%);
+	}
+
+}
+
+@media (max-width:991px) {
+	.review {
+		&__item {
+			align-items: stretch;
+		}
+
+		&__info {
+			flex-direction: column;
+			height: 50px;
+			align-items: stretch;
+		}
+
+		&__rating {
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+
+			small {
+				margin-left: .5rem;
+			}
+
+		}
+
+		&__content {
+			margin-top: .5rem;
+		}
+
+	}
+
+}
+
+@media (max-width:767px) {
+	.player__basic-info {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.player__main-info {
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+
+	.review {
+		&__info {
+			height: auto;
+		}
+
+		&__owner {
+			flex-direction: column;
+			align-items: stretch;
+		}
+
+	}
+
+}
+
+@media (max-width:575px) {
+	.player {
+		&__image img {
+			width: 100px;
+			height: 100px;
+			margin-bottom: 1.5rem;
+		}
+
+		&__overview {
+			flex-direction: column;
+			align-items: stretch;
+			margin-bottom: 1rem;
+		}
+
+		&__basic-info {
+			margin-right: 0;
+		}
+
+	}
+
+	.review__rating {
+		flex-direction: column-reverse;
+		align-items: stretch;
+
+		small {
+			margin-left: 0;
+		}
+
+	}
+
+}

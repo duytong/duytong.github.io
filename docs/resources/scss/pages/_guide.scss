@@ -1,0 +1,20 @@
+.guide {
+	&__title {
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 0;
+		padding-left: 1rem;
+		text-transform: uppercase;
+		border-bottom: 2px solid $dark-color;
+	}
+
+	&__description {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 1.5rem 0;
+		text-align: center;
+		text-transform: uppercase;
+		color: $main-color;
+	}
+
+}

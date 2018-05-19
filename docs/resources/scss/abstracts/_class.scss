@@ -1,0 +1,59 @@
+.text-primary {
+	color: $primary-color !important;
+}
+
+.text-secondary {
+	color: $secondary-color !important;
+}
+
+.text-success {
+	color: $success-color !important;
+}
+
+.text-info {
+	color: $info-color !important;
+}
+
+.text-warning {
+	color: $warning-color !important;
+}
+
+.text-danger {
+	color: $danger-color !important;
+}
+
+.vip-color-1,
+.vip-color-2,
+.vip-color-3,
+.vip-color-4,
+.vip-color-5 {
+	color: #007895;
+}
+
+.vip-color-6,
+.vip-color-7,
+.vip-color-8,
+.vip-color-9 {
+	color: #aa0e16;
+}
+
+.vip-color-10,
+.vip-color-11,
+.vip-color-12,
+.vip-color-13 {
+	color: #be38de;
+}
+
+.object-fit img {
+	object-fit: cover;
+}
+
+.compat-object-fit {
+	background-position: center;
+	background-size: cover;
+
+	img {
+		opacity: 0;
+	}
+
+}

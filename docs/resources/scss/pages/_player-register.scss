@@ -1,0 +1,40 @@
+.player-register {
+	&__title {
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 0;
+		padding-left: 1rem;
+		text-transform: uppercase;
+		border-bottom: 2px solid $dark-color;
+	}
+
+	&__content {
+		margin: 1.5rem 0;
+	}
+
+	&__rule-title {
+		margin-bottom: .5rem;
+	}
+
+	&__rule-list {
+		list-style: disc inside;
+	}
+
+	&__rule-item {
+		font-size: 14px;
+		margin-bottom: .5rem;
+		margin-left: 1.5rem;
+		text-transform: uppercase;
+	}
+
+	&__join {
+		text-align: center;
+	}
+
+	.btn {
+		font-weight: 700;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+	}
+
+}

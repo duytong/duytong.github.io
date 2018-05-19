@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Player Duo - Coaching Or Play Together</title>
+	<link rel="shortcut icon" href="images//favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -15,26 +17,34 @@
 
 			<!-- Navbar -->
 			<nav class="navbar">
-				<img src="images/logo.png" alt="">
+				<a class="navbar__toggler">
+					<i class="fas fa-bars fa-2x"></i>
+				</a>
+				<a href="index.html" class="navbar__brand">
+					<img src="images/logo.png" alt="">
+				</a>
 				<div class="navbar__nav">
 					<div class="navbar__collapse">
+						<a class="navbar__close">
+							<i class="fas fa-times"></i>
+						</a>
 						<ul class="navbar__list">
 							<li class="navbar__item navbar__item--language">
-								<a href="">
+								<a href="#">
 									<img src="images/flag-1.png" alt="">
 								</a>
-								<a href="">
+								<a href="#">
 									<img src="images/flag-2.png" alt="">
 								</a>
-								<a href="">
+								<a href="#">
 									<img src="images/flag-3.png" alt="">
 								</a>
 							</li>
 							<li class="navbar__item">
-								<a class="navbar__link" href="index">Home page</a>
+								<a class="navbar__link" href="index.html">Home page</a>
 							</li>
 							<li class="navbar__item">
-								<a class="navbar__link" href="guide">Guide</a>
+								<a class="navbar__link" href="guide.html">Guide</a>
 							</li>
 							<li class="navbar__item">
 								<a class="navbar__link" href="#">Community</a>
@@ -45,14 +55,17 @@
 							<li class="navbar__item">
 								<a class="navbar__link" href="#">Player Card</a>
 							</li>
-							<li class="navbar__item">
-								<a class="navbar__link js-modal" data-target="#modal-ranking">Ranking</a>
+							<li class="navbar__item navbar__item--ranking js-modal" data-target="#modal-ranking">
+								<a class="navbar__link">Ranking</a>
 							</li>
 						</ul>
 					</div>
+					<a class="navbar__ranking js-modal" data-target="#modal-ranking">
+						<i class="fas fa-crown fa-2x"></i>
+					</a>
 					<div class="dropdown dropdown--notification">
 						<a class="dropdown__toggle js-dropdown">
-							<i class="fas fa-bell"></i>
+							<i class="fas fa-bell fa-2x"></i>
 							<span>0</span>
 						</a>
 						<div class="dropdown__menu"></div>
@@ -60,7 +73,7 @@
 					<div class="dropdown dropdown--user">
 						<a class="dropdown__toggle js-dropdown">
 							<div class="object-fit">
-								<img src="images/player-2.jpg" alt="">
+								<img src="images/avatar.jpg" alt="">
 							</div>
 							<span>Tong</span>
 						</a>
@@ -71,38 +84,43 @@
 							</div>
 							<div class="dropdown__divider"></div>
 							<div class="dropdown__body">
-								<a href="customer_history" class="dropdown__item">
-									<i class="fas fa-history"></i>
-									<span>Transaction history</span>
-								</a>
-								<a class="dropdown__item js-modal" data-target="#modal-buy-player-card">
-									<i class="fas fa-credit-card"></i>
-									<span>Buy player card</span>
-								</a>
-								<a href="customer_history" class="dropdown__item">
-									<i class="fas fa-heart"></i>
-									<span>Follow list</span>
-								</a>
-								<a href="customer_history" class="dropdown__item">
-									<i class="fas fa-users"></i>
-									<span>Referral</span>
-								</a>
-								<a href="customer_setting" class="dropdown__item">
-									<i class="fas fa-cogs"></i>
-									<span>Account settings</span>
-								</a>
-								<a href="customer_setting" class="dropdown__item">
-									<i class="fas fa-lock-open"></i>
-									<span>Create lock security</span>
-								</a>
-								<a class="dropdown__item js-modal" data-target="#modal-recharge">
-									<i class="fas fa-plus"></i>
-									<span>Recharge</span>
-								</a>
-								<a href="" class="dropdown__item">
-									<i class="fas fa-power-off"></i>
-									<span>Logout</span>
-								</a>
+								<div class="object-fit">
+									<img src="images/avatar.jpg" alt="">
+								</div>
+								<div>
+									<a href="customer_history.html" class="dropdown__item">
+										<i class="fas fa-history"></i>
+										<span>Transaction history</span>
+									</a>
+									<a class="dropdown__item js-modal" data-target="#modal-buy-player-card">
+										<i class="fas fa-credit-card"></i>
+										<span>Buy player card</span>
+									</a>
+									<a href="#" class="dropdown__item">
+										<i class="fas fa-heart"></i>
+										<span>Follow list</span>
+									</a>
+									<a href="#" class="dropdown__item">
+										<i class="fas fa-users"></i>
+										<span>Referral</span>
+									</a>
+									<a href="customer_setting.html" class="dropdown__item">
+										<i class="fas fa-cogs"></i>
+										<span>Account settings</span>
+									</a>
+									<a href="customer_setting.html" class="dropdown__item">
+										<i class="fas fa-lock-open"></i>
+										<span>Create lock security</span>
+									</a>
+									<a class="dropdown__item js-modal" data-target="#modal-recharge">
+										<i class="fas fa-plus"></i>
+										<span>Recharge</span>
+									</a>
+									<a href="#" class="dropdown__item">
+										<i class="fas fa-power-off"></i>
+										<span>Logout</span>
+									</a>
+								</div>
 							</div>
 							<div class="dropdown__divider"></div>
 							<div class="dropdown__footer">
@@ -116,9 +134,6 @@
 						</div>
 					</div>
 				</div>
-				<a class="navbar__toggler">
-					<i class="fas fa-bars fa-2x"></i>
-				</a>
 			</nav>
 		</div>
 
@@ -137,9 +152,9 @@
 			<!-- Customer -->
 			<section class="customer">
 				<div class="row">
-					<div class="col-sm-2">
+					<div class="col-sm-4 col-lg-3 col-xl-2">
 						<div class="customer__info">
-							<img src="images/player-2.jpg" alt="">
+							<img src="images/avatar.jpg" alt="">
 							<ul class="customer__statistical">
 								<li>
 									<span>Total recharge ($)</span>
@@ -156,22 +171,22 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-10">
+					<div class="col-sm-8 col-lg-9 col-xl-10">
 						<ul class="customer__navbar">
 							<li>
-								<a href="" class="btn">Settings</a>
+								<a href="customer_setting.html" class="btn">Settings</a>
 							</li>
 							<li>
-								<a href="" class="btn active">Transaction history</a>
+								<a href="customer_history.html" class="btn active">Transaction history</a>
 							</li>
 							<li>
-								<a href="" class="btn">Follow list</a>
+								<a href="#" class="btn">Follow list</a>
 							</li>
 							<li>
-								<a href="" class="btn">Referral list</a>
+								<a href="#" class="btn">Referral list</a>
 							</li>
 							<li>
-								<a href="" class="btn">VIP</a>
+								<a href="customer_vip.html" class="btn">VIP</a>
 							</li>
 						</ul>
 						<div class="customer__content customer__content--vip">
@@ -288,7 +303,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-7">
-					<div class="info">
+					<div class="about">
 						<p>Player Duo is a gamer connect system, operated by Ylinkee.,ltd</p>
 						<p>With Player Duo, you will easy searching teammates, coachers is pro player, streamer. When play with pro player , your
 							skill will fast improved.</p>
@@ -296,7 +311,7 @@
 				</div>
 				<div class="col-xl-5">
 					<div class="contact">
-						<div class="dmca">
+						<div>
 							<img src="images/dmca.png" alt="">
 						</div>
 						<p>Address: 70 Phan Thanh, Hai Chau District, Da Nang, Viet Nam</p>
@@ -331,252 +346,312 @@
 						<div class="tab__pane show" id="today">
 							<ul class="ranking">
 								<li class="ranking__item">
-									<div class="ranking__top">
-										<img src="images/avatar-1.jpg" alt="" class="avatar">
+									<div class="ranking__no-1">
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" >
+										</div>
 									</div>
 									<a class="ranking__user js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
-									<span class="ranking__money">967.00$</span>
+									<span>967.00$</span>
 
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#2</span>
-										<img src="images/avatar-2.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Thad Herzog</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>883.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#3</span>
-										<img src="images/avatar-3.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Dejuan Cassin</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>69.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#4</span>
-										<img src="images/avatar-4.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Missouri Murazik</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>336.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#5</span>
-										<img src="images/avatar-5.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Ceasar Wehner</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>263.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#6</span>
-										<img src="images/avatar-6.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Cecile Grant</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>739.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#7</span>
-										<img src="images/avatar-7.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Merritt Bauch</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>525.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#8</span>
-										<img src="images/avatar-8.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Kellen O'Connell</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>502.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#9</span>
-										<img src="images/avatar-9.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Annalise Von</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>8.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#10</span>
-										<img src="images/avatar-10.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Candelario Huel</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>389.00$</span>
+									<span>967.00$</span>
 								</li>
 							</ul>
 						</div>
 						<div class="tab__pane" id="week">
 							<ul class="ranking">
 								<li class="ranking__item">
-									<div class="ranking__top">
-										<img src="images/avatar-1.jpg" alt="" class="avatar">
+									<div class="ranking__no-1">
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" >
+										</div>
 									</div>
 									<a class="ranking__user js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
-									<span class="ranking__money">967.00$</span>
+									<span>967.00$</span>
 
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#2</span>
-										<img src="images/avatar-2.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Thad Herzog</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>883.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#3</span>
-										<img src="images/avatar-3.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Dejuan Cassin</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>69.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#4</span>
-										<img src="images/avatar-4.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Missouri Murazik</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>336.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#5</span>
-										<img src="images/avatar-5.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Ceasar Wehner</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>263.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#6</span>
-										<img src="images/avatar-6.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Cecile Grant</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>739.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#7</span>
-										<img src="images/avatar-7.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Merritt Bauch</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>525.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#8</span>
-										<img src="images/avatar-8.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Kellen O'Connell</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>502.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#9</span>
-										<img src="images/avatar-9.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Annalise Von</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>8.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#10</span>
-										<img src="images/avatar-10.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Candelario Huel</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>389.00$</span>
+									<span>967.00$</span>
 								</li>
 							</ul>
 						</div>
 						<div class="tab__pane" id="month">
 							<ul class="ranking">
 								<li class="ranking__item">
-									<div class="ranking__top">
-										<img src="images/avatar-1.jpg" alt="" class="avatar">
+									<div class="ranking__no-1">
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" >
+										</div>
 									</div>
 									<a class="ranking__user js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
-									<span class="ranking__money">967.00$</span>
+									<span>967.00$</span>
 
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#2</span>
-										<img src="images/avatar-2.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Thad Herzog</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>883.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#3</span>
-										<img src="images/avatar-3.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Dejuan Cassin</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>69.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#4</span>
-										<img src="images/avatar-4.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Missouri Murazik</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>336.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#5</span>
-										<img src="images/avatar-5.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Ceasar Wehner</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>263.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#6</span>
-										<img src="images/avatar-6.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Cecile Grant</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>739.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#7</span>
-										<img src="images/avatar-7.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Merritt Bauch</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>525.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#8</span>
-										<img src="images/avatar-8.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Kellen O'Connell</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>502.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#9</span>
-										<img src="images/avatar-9.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Annalise Von</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>8.00$</span>
+									<span>967.00$</span>
 								</li>
 								<li class="ranking__item">
 									<div class="ranking__user">
 										<span>#10</span>
-										<img src="images/avatar-10.jpg" alt="" class="avatar">
-										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Candelario Huel</a>
+										<div class="object-fit">
+											<img src="images/avatar.jpg" alt="" class="avatar">
+										</div>
+										<a class="js-modal" data-target="#modal-user" data-dismiss="modal">Jayne Walter</a>
 									</div>
-									<span>389.00$</span>
+									<span>967.00$</span>
 								</li>
 							</ul>
 						</div>
@@ -596,13 +671,13 @@
 		<div class="modal__dialog modal__dialog--centered">
 			<div class="modal__content">
 				<div class="user">
-					<img src="images/avatar-1.jpg" alt="" class="avatar">
+					<img src="images/avatar.jpg" alt="" class="avatar">
 					<div class="user__info">
-						<div class="user__vip">
+						<div class="user__name">
 							<a href="" class="js-modal" data-target="#modal-vip">
 								<img src="images/vip-1.png" alt="">
 							</a>
-							<span class="user__name vip-color-1">Ernesto Hilpert</span>
+							<span class="vip-color-1">Ernesto Hilpert</span>
 						</div>
 						<div>
 							<a href="" class="btn btn--main" target="blank">
@@ -631,91 +706,91 @@
 						<tbody>
 							<tr>
 								<td>
-									<img src="images/vip-1.png" alt="">
+									<img src="images/vip-1.png" alt="" class="vip-lg">
 								</td>
 								<td>326.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-2.png" alt="">
+									<img src="images/vip-2.png" alt="" class="vip-lg">
 								</td>
 								<td>728.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-3.png" alt="">
+									<img src="images/vip-3.png" alt="" class="vip-lg">
 								</td>
 								<td>359.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-4.png" alt="">
+									<img src="images/vip-4.png" alt="" class="vip-lg">
 								</td>
 								<td>899.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-5.png" alt="">
+									<img src="images/vip-5.png" alt="" class="vip-lg">
 								</td>
 								<td>471.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-6.png" alt="">
+									<img src="images/vip-6.png" alt="" class="vip-lg">
 								</td>
 								<td>297.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-7.png" alt="">
+									<img src="images/vip-7.png" alt="" class="vip-lg">
 								</td>
 								<td>937.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-8.png" alt="">
+									<img src="images/vip-8.png" alt="" class="vip-lg">
 								</td>
 								<td>723.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-9.png" alt="">
+									<img src="images/vip-9.png" alt="" class="vip-lg">
 								</td>
 								<td>544.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-10.png" alt="">
+									<img src="images/vip-10.png" alt="" class="vip-lg">
 								</td>
 								<td>244.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-11.png" alt="">
+									<img src="images/vip-11.png" alt="" class="vip-lg">
 								</td>
 								<td>789.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-12.png" alt="">
+									<img src="images/vip-12.png" alt="" class="vip-lg">
 								</td>
 								<td>51.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-13.png" alt="">
+									<img src="images/vip-13.png" alt="" class="vip-lg">
 								</td>
 								<td>100.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-14.png" alt="">
+									<img src="images/vip-14.png" alt="" class="vip-lg">
 								</td>
 								<td>836.00$</td>
 							</tr>
 							<tr>
 								<td>
-									<img src="images/vip-15.png" alt="">
+									<img src="images/vip-15.png" alt="" class="vip-lg">
 								</td>
 								<td>884.00$</td>
 							</tr>
@@ -739,19 +814,17 @@
 					<h5 class="modal__title">Buy player card</h5>
 				</div>
 				<div class="modal__body">
-					<div class="payment">
-						<div class="payment__item">
-							<span>Current balance:</span>	
-							<span class="money">0.00$ <a class="js-modal" data-target="#modal-recharge">(Recharge more)</a></span>
-						</div>
-						<div class="payment__item">
-							<label>Card value:</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="payment__item">
-							<span>Fee:</span>
-							<span class="money">0$</span>
-						</div>
+					<div>
+						<span>Current balance:</span>	
+						<span>0.00$ <a class="js-modal" data-target="#modal-recharge">(Recharge more)</a></span>
+					</div>
+					<div>
+						<label>Card value:</label>
+						<input type="text" class="form-control">
+					</div>
+					<div>
+						<span>Fee:</span>
+						<span>0$</span>
 					</div>
 				</div>
 				<div class="modal__footer">
