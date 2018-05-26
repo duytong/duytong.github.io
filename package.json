@@ -1,28 +1,21 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "The portfolio for developers",
-  "main": "index.html",
+  "private": true,
   "scripts": {
-    "scss": "node-sass -watch -o css scss/app.scss --import-css"
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/duytong/duytong.github.io.git"
-  },
-  "keywords": [
-    "portfolio",
-    "duytong"
-  ],
-  "author": "Duy Tong",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/duytong/duytong.github.io/issues"
-  },
-  "homepage": "https://duytong.github.io/",
   "dependencies": {
-    "node-sass": "^4.9.0",
+    "cross-env": "^5.1.6",
+    "laravel-mix": "^2.1.11",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
     "vue": "^2.5.16",
+    "vue": "^0.7.5",
     "vue-router": "^3.0.1"
   }
 }
